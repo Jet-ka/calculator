@@ -1,0 +1,40 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+.options{
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:50px;
+}
+.place{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    width:300px;
+}
+
+#result{
+    text-align:center;
+}
+.stopwatch{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    
+}
