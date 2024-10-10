@@ -10,7 +10,9 @@ const[disp,setdisplay]=useState("none");
 const[diss,setdis]=useState("none");
 
 //store discount value when user place value
-const[result,setresult]=useState("");
+const[resultdiscount,setresultdiscount]=useState("");
+//store speed value when user place value
+const[resultspeed,setresultspeed]=useState("");
 
 //for discount
   function dis(){
@@ -41,7 +43,7 @@ function getdata(data){
  //alert(result);
 // document.getElementById("result").innerHTML={result}
  //console.log(result);
-setresult(
+ setresultdiscount(
   
   result
 )
@@ -60,7 +62,7 @@ function getspeed(data){
  // console.log(speedresult);
  // setspeed(speedresult);
 
-  setresult(speedresult);
+ setresultspeed(speedresult);
 }
 
 
@@ -78,7 +80,7 @@ return (
 style={{display:disp}}
 getdata={getdata}
 
-showresult={result !== "" ? result : "0"} // Display result or 0 for conditional rendering
+showresult={resultdiscount !== "" ? resultdiscount : "0"} // Display result or 0 for conditional rendering
 
 
 />
@@ -86,7 +88,7 @@ showresult={result !== "" ? result : "0"} // Display result or 0 for conditional
 <Speed style={{display:diss}}
 //value
 getspeeddata={getspeed}
-showresult={result !== "" ? result : "0"}
+showresult={resultspeed !== "" ? resultspeed : "0"}
 
 />
 </div>
